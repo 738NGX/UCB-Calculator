@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UCB算法计算器</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div display="flex">
+        <a href="https://wiki.biligame.com/linklikelovelive/%E6%8A%BD%E5%8D%A1%E6%A8%A1%E6%8B%9F%E5%99%A8" target="_blank">启动抽卡模拟器</a>
+        <div>
+            <textarea id="pool1up" placeholder="卡池1出货数量"></textarea>
+            <textarea id="pool1down" placeholder="卡池1未出货数量"></textarea>
+            <button id="drawPool1">卡池1抽卡</button>
+            <div>
+                卡池1累计出货数量：<span id="pool1upTotal">0</span>
+                /卡池1累计未出货数量：<span id="pool1downTotal">0</span>
+            </div>
+            <div>
+                卡池1抽卡次数：<span id="pool1Draws">0</span>
+                /卡池1出货率：<span id="pool1Rate">0%</span>
+                /卡池1Delta：<span id="pool1Delta">0</span>
+            </div>
+            <div>卡池1置信上界: <span id="pool1UCB">0</span></div>
+            <textarea id="pool2up" placeholder="卡池2出货数量"></textarea>
+            <textarea id="pool2down" placeholder="卡池2未出货数量"></textarea>
+            <button id="drawPool2">卡池2抽卡</button>
+            <div>
+                卡池2累计出货数量：<span id="pool2upTotal">0</span>
+                /卡池2累计未出货数量：<span id="pool2downTotal">0</span></div>
+            <div>
+                卡池2抽卡次数：<span id="pool2Draws">0</span>
+                /卡池2出货率：<span id="pool2Rate">0%</span>
+                /卡池2Delta：<span id="pool2Delta">0</span>
+            </div>
+            <div>卡池2置信上界: <span id="pool2UCB">0</span></div>
+            <textarea id="pool3up" placeholder="卡池3出货数量"></textarea>
+            <textarea id="pool3down" placeholder="卡池3未出货数量"></textarea>
+            <button id="drawPool3">卡池3抽卡</button>
+            <div>
+                卡池3累计出货数量：<span id="pool3upTotal">0</span>
+                /卡池3累计未出货数量：<span id="pool3downTotal">0</span>
+            </div>
+            <div>
+                卡池3抽卡次数：<span id="pool3Draws">0</span>
+                /卡池3出货率：<span id="pool3Rate">0%</span>
+                /卡池3Delta：<span id="pool3Delta">0</span>
+            </div>
+            <div>卡池3置信上界: <span id="pool3UCB">0</span></div>
+            <div>总抽卡次数：<span id="totalDraws">0</span></div>
+        </div>
+    </div>
+    <canvas id="poolsChart" width="20" height="10" style="width:10px; height:10px;"></canvas>
+</body>
+
+</html>
